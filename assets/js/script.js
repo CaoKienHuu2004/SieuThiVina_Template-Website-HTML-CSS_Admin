@@ -60,7 +60,7 @@ $(document).ready(function () {
         bFilter: true,
         sDom: "fBtlpi", // 'B' để kích hoạt Buttons
         pagingType: "numbers",
-        ordering: true,
+        ordering: false,
         language: {
             search: " ",
             sLengthMenu: "_MENU_",

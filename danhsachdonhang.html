@@ -196,11 +196,11 @@
                 <!-- <li><a href="saleslist.html">Xác nhận thanh toán<span class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li> -->
                 <li><a href="saleslist.html">Chờ thanh toán đơn <span
                       class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li>
-                <li><a class="active" href="saleslist.html">Xác nhận đơn hàng <span
+                <li><a href="saleslist.html">Xác nhận đơn hàng <span
                       class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li>
                 <li><a href="saleslist.html">Đóng gói đơn hàng</a></li>
                 <li><a href="saleslist.html">Vận chuyển đơn hàng</a></li>
-                <li><a href="danhsachdonhang.html">Danh sách đơn hàng</a></li>
+                <li><a class="active" href="danhsachdonhang.html">Danh sách đơn hàng</a></li>
 
               </ul>
             </li>
@@ -261,8 +261,63 @@
       <div class="content">
         <div class="page-header">
           <div class="page-title">
-            <h4>Xác nhận đơn hàng <span class="bg-danger text-white text-center rounded-circle blinking-flash px-2 py-1" style="font-size: 13px;">!</span></h4>
-            <h6>Những đơn hàng đang chờ xác nhận từ bạn</h6>
+            <h4>Danh sách đơn hàng</h4>
+            <h6>Danh sách những đơn hàng đang có trên hệ thống.</h6>
+          </div>
+        </div>
+
+<div class="row">
+          <div class="col-lg-3 col-sm-6 col-12">
+            <a href="#" class="dash-widget dash1">
+              <div class="dash-widgetimg">
+                <span><i data-feather="package" style="color: #1fb163;"></i></span>
+              </div>
+              <div class="dash-widgetcontent">
+                <h5>
+                  <span class="counters">100</span>
+                </h5>
+                <h6>Tổng số đơn hàng</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <a href="#" class="dash-widget dash2">
+              <div class="dash-widgetimg">
+                <span><i data-feather="share" style="color: #0093e8;"></i></span>
+              </div>
+              <div class="dash-widgetcontent">
+                <h5>
+                  <span class="counters">80</span>
+                </h5>
+                <h6>Đơn hoàn thành</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <a href="#" class="dash-widget dash3">
+              <div class="dash-widgetimg">
+                <span><i data-feather="x-circle" style="color:#ea5454;"></i></span>
+              </div>
+              <div class="dash-widgetcontent">
+                <h5>
+                  <span class="counters">20</span>
+                </h5>
+                <h6>Đã hủy đơn</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-12">
+            <a href="#" class="dash-widget dash">
+              <div class="dash-widgetimg">
+                <span><i data-feather="alert-circle" style="color:#ff8f07;"></i></span>
+              </div>
+              <div class="dash-widgetcontent">
+                <h5>
+                  <span class="counters">76</span>
+                </h5>
+                <h6>Chờ xác nhận đơn</h6>
+              </div>
+            </a>
           </div>
         </div>
 
@@ -324,11 +379,13 @@
                     </td>
                     <td class="text-center"><span class="badges bg-lightyellow">Chờ xác nhận</span></td>
                     <td class="text-center">
-                      <a class="me-3" href="editproduct.html">
-                        <i data-feather="check-circle" class="text-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Xác nhận đơn hàng"></i>
+                      <a class="me-3" href="sales-details.html">
+                        <i data-feather="eye" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Xem chi tiết đơn hàng"></i>
                       </a>
-                      <a class="confirm-text" href="javascript:void(0);">
-                        <i data-feather="x-circle" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Từ chối và hủy đơn"></i>
+                      <!-- <a href="javascript: void(0);" id="alert-confirm"
+                                    class="btn btn-primary waves-effect waves-light">Click me</a> -->
+                      <a class="" href="javascript:void(0);">
+                        <i data-feather="x-circle" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Xác nhận hủy đơn"></i>
                       </a>
                     </td>
                   </tr>
@@ -346,11 +403,11 @@
                     </td>
                     <td class="text-center"><span class="badges bg-lightpurple">Chờ thanh toán</span></td>
                     <td class="text-center">
-                      <a class="me-3" href="editproduct.html">
-                        <i data-feather="check-circle" class="text-success" data-bs-toggle="tooltip" data-bs-placement="top" title="Xác nhận đơn hàng"></i>
+                      <a class="me-3" href="sales-details.html">
+                        <i data-feather="eye" class="text-primary" data-bs-toggle="tooltip" data-bs-placement="top" title="Xem chi tiết đơn hàng"></i>
                       </a>
-                      <a class="confirm-text" href="javascript:void(0);">
-                        <i data-feather="x-circle" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Từ chối và hủy đơn"></i>
+                      <a class="" href="javascript:void(0);">
+                        <i data-feather="x-circle" class="text-danger" data-bs-toggle="tooltip" data-bs-placement="top" title="Xác nhận hủy đơn"></i>
                       </a>
                     </td>
                   </tr>
@@ -390,6 +447,7 @@
 
     <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
     <script src="assets/plugins/apexchart/chart-data.js"></script>
+    
 </body>
 
 </html>

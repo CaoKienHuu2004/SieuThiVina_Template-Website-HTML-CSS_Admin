@@ -1,694 +1,891 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, user-scalable=0"
-    />
-    <meta name="description" content="POS - Bootstrap Admin Template" />
-    <meta
-      name="keywords"
-      content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects"
-    />
-    <meta name="author" content="Dreamguys - Bootstrap Admin Template" />
-    <meta name="robots" content="noindex, nofollow" />
-    <title>Dreams Pos admin template</title>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="assets/img/favicon.png"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+  <meta name="description" content="POS - Bootstrap Admin Template" />
+  <meta name="keywords"
+    content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern,  html5, responsive" />
+  <meta name="author" content="Dreamguys - Bootstrap Admin Template" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Hệ thống quản trị Siêu Thị Vina</title>
 
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="shortcut icon" type="image/x-icon" href="assets/img/logo_nguyenban.png" />
 
-    <link rel="stylesheet" href="assets/css/animate.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css" />
 
-    <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/animate.css" />
 
-    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+  <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/assets/admin/css/jquery.dataTables.min.css">
 
-    <link
-      rel="stylesheet"
-      href="assets/plugins/fontawesome/css/fontawesome.min.css"
-    />
-    <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+  <link rel="stylesheet" href="assets/plugins/dragula/css/dragula.min.css" />
 
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
-  <body>
-    <div id="global-loader">
-      <div class="whirly-loader"></div>
+  <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/46.0.2/ckeditor5.css" crossorigin>
+
+  <link rel="stylesheet" href="https://cdn.datatables.net/buttons/2.4.1/css/buttons.dataTables.min.css">
+
+  <link rel="stylesheet" href="assets/plugins/select2/css/select2.min.css" />
+
+  <link rel="stylesheet" href="assets/plugins/owlcarousel/owl.carousel.min.css" />
+
+  <link rel="stylesheet" href="assets/plugins/lightbox/glightbox.min.css" />
+
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" />
+  <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" />
+
+  <link rel="stylesheet" href="assets/plugins/scrollbar/scroll.min.css">
+  <link rel="stylesheet" href="assets/plugins/alertify/alertify.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <div id="global-loader">
+    <div class="whirly-loader"></div>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="header">
+      <div class="header-left active">
+        <a href="index.html" class="logo">
+          <img src="assets/img/logo_nguyenban.png" alt style="width: 65%" />
+        </a>
+        <a href="index.html" class="logo-small">
+          <img src="assets/img/logo_nguyenban.png" alt style="width: 60%" />
+        </a>
+        <a id="toggle_btn" href="javascript:void(0);"> </a>
+      </div>
+
+      <a id="mobile_btn" class="mobile_btn" href="#sidebar">
+        <span class="bar-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </span>
+      </a>
+
+      <ul class="nav user-menu">
+        <li class="nav-item">
+          <div class="top-nav-search">
+            <a href="javascript:void(0);" class="responsive-search">
+              <i class="fa fa-search"></i>
+            </a>
+            <form action="#">
+              <div class="searchinputs">
+                <input type="text" placeholder="Tìm kiếm ..." />
+                <div class="search-addon">
+                  <span><img src="assets/img/icons/closes.svg" alt="img" /></span>
+                </div>
+              </div>
+              <a class="btn" id="searchdiv"><img src="assets/img/icons/search.svg" alt="img" /></a>
+            </form>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a href="javascript:void(0);" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+            <img src="assets/img/icons/notification-bing.svg" alt="img" />
+            <span class="badge rounded-pill">4</span>
+          </a>
+          <div class="dropdown-menu notifications">
+            <div class="topnav-dropdown-header">
+              <span class="notification-title fw-bold">Thông báo</span>
+              <a href="javascript:void(0)" class="clear-noti">
+                xem tất cả </a>
+            </div>
+            <div class="noti-content">
+              <ul class="notification-list">
+                <li class="notification-message">
+                  <a href="activities.html">
+                    <div class="media d-flex">
+                      <div class="media-body flex-grow-1">
+                        <p class="noti-details">
+                          <span class="noti-title">John Doe</span> added new task
+                          <span class="noti-title">Patient appointment booking</span>
+                        </p>
+                        <p class="noti-time">
+                          <span class="notification-time">4 phút trước</span>
+                        </p>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="topnav-dropdown-footer">
+              <a href="activities.html">Xem tất cả thông báo</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav-item dropdown has-arrow main-drop">
+          <a href="#" class="dropdown-toggle nav-link userset" data-bs-toggle="dropdown">
+            <span class="user-img"><img src="assets/img/profiles/avator1.jpg" alt />
+              <span class="status online"></span></span>
+          </a>
+          <div class="dropdown-menu menu-drop-user">
+            <div class="profilename">
+              <div class="profileset">
+                <span class="user-img"><img src="assets/img/profiles/avator1.jpg" alt />
+                  <span class="status online"></span></span>
+                <div class="profilesets">
+                  <h6>Trần Bá Hộ</h6>
+                  <h5>Quản trị viên</h5>
+                </div>
+              </div>
+              <hr class="m-0" />
+              <a class="dropdown-item" href="profile.html">
+                <i class="me-2" data-feather="user"></i>
+                Thông tin cá nhân</a>
+              <a class="dropdown-item" href="https://sieuthivina.com">
+                <i class="me-2" data-feather="globe"></i>Sieuthivina.com</a>
+              <hr class="m-0" />
+              <a class="dropdown-item logout pb-0" href="signin.html"><img src="assets/img/icons/log-out.svg"
+                  class="me-2" alt="img" />Đăng xuất</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+
+      <div class="dropdown mobile-user-menu">
+        <a href="javascript:void(0);" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+          aria-expanded="false"><i class="fa fa-ellipsis-v"></i></a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="profile.html">Thông tin
+            cá nhân</a>
+          <a class="dropdown-item" href="https://sieuthivina.com">Sieuthivina.com</a>
+          <a class="dropdown-item" href="signin.html">Đăng
+            xuất</a>
+        </div>
+      </div>
     </div>
 
-    <div class="main-wrapper">
-      <div class="header">
-        <div class="header-left active">
-          <a href="index.html" class="logo">
-            <img src="assets/img/logo.png" alt="" />
-          </a>
-          <a href="index.html" class="logo-small">
-            <img src="assets/img/logo-small.png" alt="" />
-          </a>
-          <a id="toggle_btn" href="javascript:void(0);"> </a>
-        </div>
-
-        <a id="mobile_btn" class="mobile_btn" href="#sidebar">
-          <span class="bar-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </span>
-        </a>
-
-        <ul class="nav user-menu">
-          <li class="nav-item">
-            <div class="top-nav-search">
-              <a href="javascript:void(0);" class="responsive-search">
-                <i class="fa fa-search"></i>
+    <div class="sidebar" id="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div id="sidebar-menu" class="sidebar-menu">
+          <ul>
+            <li class="active">
+              <a href="index.html"><i data-feather="home"></i>
+                <span>Tổng quan</span>
               </a>
-              <form action="#">
-                <div class="searchinputs">
-                  <input type="text" placeholder="Search Here ..." />
-                  <div class="search-addon">
-                    <span
-                      ><img src="assets/img/icons/closes.svg" alt="img"
-                    /></span>
-                  </div>
-                </div>
-                <a class="btn" id="searchdiv"
-                  ><img src="assets/img/icons/search.svg" alt="img"
-                /></a>
-              </form>
-            </div>
-          </li>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><i data-feather="package"></i><span>
+                  Sản phẩm</span>
+                <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="productlist.html">Danh sách sản
+                    phẩm</a></li>
+                <li><a href="categorylist.html">Danh mục sản
+                    phẩm</a></li>
+                <li><a href="brandlist.html">Thương hiệu
+                    sản phẩm</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><i data-feather="shopping-cart"></i>
+                <span>Bán hàng <span class="bg-danger text-white text-center rounded-circle blinking-flash px-2 py-1"
+                    style="font-size: 13px;">!</span></span>
+                <span class="menu-arrow"></span></a>
+              <ul>
+                <!-- <li><a href="saleslist.html">Xác nhận thanh toán<span class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li> -->
+                <li><a href="saleslist.html">Chờ thanh toán đơn <span
+                      class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li>
+                <li><a href="saleslist.html">Xác nhận đơn hàng <span
+                      class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li>
+                <li><a href="saleslist.html">Đóng gói đơn hàng</a></li>
+                <li><a href="saleslist.html">Vận chuyển đơn hàng</a></li>
+                <li><a href="danhsachdonhang.html">Danh sách đơn hàng</a></li>
 
-          <li class="nav-item dropdown has-arrow flag-nav">
-            <a
-              class="nav-link dropdown-toggle"
-              data-bs-toggle="dropdown"
-              href="javascript:void(0);"
-              role="button"
-            >
-              <img src="assets/img/flags/us1.png" alt="" height="20" />
-            </a>
-            <div class="dropdown-menu dropdown-menu-right">
-              <a href="javascript:void(0);" class="dropdown-item">
-                <img src="assets/img/flags/us.png" alt="" height="16" /> English
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><i data-feather="credit-card"></i><span>
+                  Thanh toán</span>
+                <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="#">Phương thức thanh toán</a></li>
+                <li><a href="#">Lịch sử thanh toán</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><i data-feather="award"></i><span>
+                  Ưu đãi & quà tặng</span>
+                <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="quotationList.html">Mã giảm giá</a></li>
+                <li><a href="addquotation.html">Quà tặng ưu đãi</a></li>
+                <li><a href="addquotation.html">Chương trình sự kiện</a></li>
+              </ul>
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><i data-feather="users"></i><span>
+                  Người dùng</span>
+                <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="transferlist.html">Danh sách khách hàng</a></li>
+                <li><a href="addtransfer.html">Danh sách quản trị viên</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="components.html"><i data-feather="bell"></i><span>
+                  Thông báo</span>
               </a>
-              <a href="javascript:void(0);" class="dropdown-item">
-                <img src="assets/img/flags/fr.png" alt="" height="16" /> French
+            </li>
+            <li class="submenu">
+              <a href="javascript:void(0);"><i data-feather="layout"></i><span>
+                  Tùy chỉnh website</span>
+                <span class="menu-arrow"></span></a>
+              <ul>
+                <li><a href="transferlist.html">Trang nội dung</a></li>
+                <li><a href="addtransfer.html">Banner quảng cáo</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="components.html"><i data-feather="layers"></i><span>
+                  Components</span>
               </a>
-              <a href="javascript:void(0);" class="dropdown-item">
-                <img src="assets/img/flags/es.png" alt="" height="16" /> Spanish
-              </a>
-              <a href="javascript:void(0);" class="dropdown-item">
-                <img src="assets/img/flags/de.png" alt="" height="16" /> German
-              </a>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown">
-            <a
-              href="javascript:void(0);"
-              class="dropdown-toggle nav-link"
-              data-bs-toggle="dropdown"
-            >
-              <img src="assets/img/icons/notification-bing.svg" alt="img" />
-              <span class="badge rounded-pill">4</span>
-            </a>
-            <div class="dropdown-menu notifications">
-              <div class="topnav-dropdown-header">
-                <span class="notification-title">Notifications</span>
-                <a href="javascript:void(0)" class="clear-noti"> Clear All </a>
-              </div>
-              <div class="noti-content">
-                <ul class="notification-list">
-                  <li class="notification-message">
-                    <a href="activities.html">
-                      <div class="media d-flex">
-                        <span class="avatar flex-shrink-0">
-                          <img alt="" src="assets/img/profiles/avatar-02.jpg" />
-                        </span>
-                        <div class="media-body flex-grow-1">
-                          <p class="noti-details">
-                            <span class="noti-title">John Doe</span> added new
-                            task
-                            <span class="noti-title"
-                              >Patient appointment booking</span
-                            >
-                          </p>
-                          <p class="noti-time">
-                            <span class="notification-time">4 mins ago</span>
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="notification-message">
-                    <a href="activities.html">
-                      <div class="media d-flex">
-                        <span class="avatar flex-shrink-0">
-                          <img alt="" src="assets/img/profiles/avatar-03.jpg" />
-                        </span>
-                        <div class="media-body flex-grow-1">
-                          <p class="noti-details">
-                            <span class="noti-title">Tarah Shropshire</span>
-                            changed the task name
-                            <span class="noti-title"
-                              >Appointment booking with payment gateway</span
-                            >
-                          </p>
-                          <p class="noti-time">
-                            <span class="notification-time">6 mins ago</span>
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="notification-message">
-                    <a href="activities.html">
-                      <div class="media d-flex">
-                        <span class="avatar flex-shrink-0">
-                          <img alt="" src="assets/img/profiles/avatar-06.jpg" />
-                        </span>
-                        <div class="media-body flex-grow-1">
-                          <p class="noti-details">
-                            <span class="noti-title">Misty Tison</span> added
-                            <span class="noti-title">Domenic Houston</span> and
-                            <span class="noti-title">Claire Mapes</span> to
-                            project
-                            <span class="noti-title"
-                              >Doctor available module</span
-                            >
-                          </p>
-                          <p class="noti-time">
-                            <span class="notification-time">8 mins ago</span>
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="notification-message">
-                    <a href="activities.html">
-                      <div class="media d-flex">
-                        <span class="avatar flex-shrink-0">
-                          <img alt="" src="assets/img/profiles/avatar-17.jpg" />
-                        </span>
-                        <div class="media-body flex-grow-1">
-                          <p class="noti-details">
-                            <span class="noti-title">Rolland Webber</span>
-                            completed task
-                            <span class="noti-title"
-                              >Patient and Doctor video conferencing</span
-                            >
-                          </p>
-                          <p class="noti-time">
-                            <span class="notification-time">12 mins ago</span>
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="notification-message">
-                    <a href="activities.html">
-                      <div class="media d-flex">
-                        <span class="avatar flex-shrink-0">
-                          <img alt="" src="assets/img/profiles/avatar-13.jpg" />
-                        </span>
-                        <div class="media-body flex-grow-1">
-                          <p class="noti-details">
-                            <span class="noti-title">Bernardo Galaviz</span>
-                            added new task
-                            <span class="noti-title">Private chat module</span>
-                          </p>
-                          <p class="noti-time">
-                            <span class="notification-time">2 days ago</span>
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-              <div class="topnav-dropdown-footer">
-                <a href="activities.html">View all Notifications</a>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item dropdown has-arrow main-drop">
-            <a
-              href="javascript:void(0);"
-              class="dropdown-toggle nav-link userset"
-              data-bs-toggle="dropdown"
-            >
-              <span class="user-img"
-                ><img src="assets/img/profiles/avator1.jpg" alt="" />
-                <span class="status online"></span
-              ></span>
-            </a>
-            <div class="dropdown-menu menu-drop-user">
-              <div class="profilename">
-                <div class="profileset">
-                  <span class="user-img"
-                    ><img src="assets/img/profiles/avator1.jpg" alt="" />
-                    <span class="status online"></span
-                  ></span>
-                  <div class="profilesets">
-                    <h6>John Doe</h6>
-                    <h5>Admin</h5>
-                  </div>
-                </div>
-                <hr class="m-0" />
-                <a class="dropdown-item" href="profile.html">
-                  <i class="me-2" data-feather="user"></i> My Profile</a
-                >
-                <a class="dropdown-item" href="generalsettings.html"
-                  ><i class="me-2" data-feather="settings"></i>Settings</a
-                >
-                <hr class="m-0" />
-                <a class="dropdown-item logout pb-0" href="signin.html"
-                  ><img
-                    src="assets/img/icons/log-out.svg"
-                    class="me-2"
-                    alt="img"
-                  />Logout</a
-                >
-              </div>
-            </div>
-          </li>
-        </ul>
-
-        <div class="dropdown mobile-user-menu">
-          <a
-            href="javascript:void(0);"
-            class="nav-link dropdown-toggle"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-            ><i class="fa fa-ellipsis-v"></i
-          ></a>
-          <div class="dropdown-menu dropdown-menu-right">
-            <a class="dropdown-item" href="profile.html">My Profile</a>
-            <a class="dropdown-item" href="generalsettings.html">Settings</a>
-            <a class="dropdown-item" href="signin.html">Logout</a>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
+    </div>
 
-      <div class="sidebar" id="sidebar">
-        <div class="sidebar-inner slimscroll">
-          <div id="sidebar-menu" class="sidebar-menu">
-            <ul>
-              <li>
-                <a href="index.html"
-                  ><img src="assets/img/icons/dashboard.svg" alt="img" /><span>
-                    Dashboard</span
-                  >
-                </a>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/product.svg" alt="img" /><span>
-                    Product</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="productlist.html">Product List</a></li>
-                  <li><a href="addproduct.html">Add Product</a></li>
-                  <li><a href="categorylist.html">Category List</a></li>
-                  <li>
-                    <a href="addcategory.html" class="active">Add Category</a>
-                  </li>
-                  <li><a href="subcategorylist.html">Sub Category List</a></li>
-                  <li><a href="subaddcategory.html">Add Sub Category</a></li>
-                  <li><a href="brandlist.html">Brand List</a></li>
-                  <li><a href="addbrand.html">Add Brand</a></li>
-                  <li><a href="importproduct.html">Import Products</a></li>
-                  <li><a href="barcode.html">Print Barcode</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/sales1.svg" alt="img" /><span>
-                    Sales</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="saleslist.html">Sales List</a></li>
-                  <li><a href="pos.html">POS</a></li>
-                  <li><a href="pos.html">New Sales</a></li>
-                  <li><a href="salesreturnlists.html">Sales Return List</a></li>
-                  <li>
-                    <a href="createsalesreturns.html">New Sales Return</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/purchase1.svg" alt="img" /><span>
-                    Purchase</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="purchaselist.html">Purchase List</a></li>
-                  <li><a href="addpurchase.html">Add Purchase</a></li>
-                  <li><a href="importpurchase.html">Import Purchase</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/expense1.svg" alt="img" /><span>
-                    Expense</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="expenselist.html">Expense List</a></li>
-                  <li><a href="createexpense.html">Add Expense</a></li>
-                  <li><a href="expensecategory.html">Expense Category</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/quotation1.svg" alt="img" /><span>
-                    Quotation</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="quotationList.html">Quotation List</a></li>
-                  <li><a href="addquotation.html">Add Quotation</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/transfer1.svg" alt="img" /><span>
-                    Transfer</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="transferlist.html">Transfer List</a></li>
-                  <li><a href="addtransfer.html">Add Transfer </a></li>
-                  <li><a href="importtransfer.html">Import Transfer </a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/return1.svg" alt="img" /><span>
-                    Return</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="salesreturnlist.html">Sales Return List</a></li>
-                  <li>
-                    <a href="createsalesreturn.html">Add Sales Return </a>
-                  </li>
-                  <li>
-                    <a href="purchasereturnlist.html">Purchase Return List</a>
-                  </li>
-                  <li>
-                    <a href="createpurchasereturn.html">Add Purchase Return </a>
-                  </li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/users1.svg" alt="img" /><span>
-                    People</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="customerlist.html">Customer List</a></li>
-                  <li><a href="addcustomer.html">Add Customer </a></li>
-                  <li><a href="supplierlist.html">Supplier List</a></li>
-                  <li><a href="addsupplier.html">Add Supplier </a></li>
-                  <li><a href="userlist.html">User List</a></li>
-                  <li><a href="adduser.html">Add User</a></li>
-                  <li><a href="storelist.html">Store List</a></li>
-                  <li><a href="addstore.html">Add Store</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/places.svg" alt="img" /><span>
-                    Places</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="newcountry.html">New Country</a></li>
-                  <li><a href="countrieslist.html">Countries list</a></li>
-                  <li><a href="newstate.html">New State </a></li>
-                  <li><a href="statelist.html">State list</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="components.html"
-                  ><i data-feather="layers"></i><span> Components</span>
-                </a>
-              </li>
-              <li>
-                <a href="blankpage.html"
-                  ><i data-feather="file"></i><span> Blank Page</span>
-                </a>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><i data-feather="alert-octagon"></i>
-                  <span> Error Pages </span> <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="error-404.html">404 Error </a></li>
-                  <li><a href="error-500.html">500 Error </a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><i data-feather="box"></i> <span>Elements </span>
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="sweetalerts.html">Sweet Alerts</a></li>
-                  <li><a href="tooltip.html">Tooltip</a></li>
-                  <li><a href="popover.html">Popover</a></li>
-                  <li><a href="ribbon.html">Ribbon</a></li>
-                  <li><a href="clipboard.html">Clipboard</a></li>
-                  <li><a href="drag-drop.html">Drag & Drop</a></li>
-                  <li><a href="rangeslider.html">Range Slider</a></li>
-                  <li><a href="rating.html">Rating</a></li>
-                  <li><a href="toastr.html">Toastr</a></li>
-                  <li><a href="text-editor.html">Text Editor</a></li>
-                  <li><a href="counter.html">Counter</a></li>
-                  <li><a href="scrollbar.html">Scrollbar</a></li>
-                  <li><a href="spinner.html">Spinner</a></li>
-                  <li><a href="notification.html">Notification</a></li>
-                  <li><a href="lightbox.html">Lightbox</a></li>
-                  <li><a href="stickynote.html">Sticky Note</a></li>
-                  <li><a href="timeline.html">Timeline</a></li>
-                  <li><a href="form-wizard.html">Form Wizard</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><i data-feather="bar-chart-2"></i> <span> Charts </span>
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="chart-apex.html">Apex Charts</a></li>
-                  <li><a href="chart-js.html">Chart Js</a></li>
-                  <li><a href="chart-morris.html">Morris Charts</a></li>
-                  <li><a href="chart-flot.html">Flot Charts</a></li>
-                  <li><a href="chart-peity.html">Peity Charts</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><i data-feather="award"></i><span> Icons </span>
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="icon-fontawesome.html">Fontawesome Icons</a></li>
-                  <li><a href="icon-feather.html">Feather Icons</a></li>
-                  <li><a href="icon-ionic.html">Ionic Icons</a></li>
-                  <li><a href="icon-material.html">Material Icons</a></li>
-                  <li><a href="icon-pe7.html">Pe7 Icons</a></li>
-                  <li><a href="icon-simpleline.html">Simpleline Icons</a></li>
-                  <li><a href="icon-themify.html">Themify Icons</a></li>
-                  <li><a href="icon-weather.html">Weather Icons</a></li>
-                  <li><a href="icon-typicon.html">Typicon Icons</a></li>
-                  <li><a href="icon-flag.html">Flag Icons</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><i data-feather="columns"></i> <span> Forms </span>
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="form-basic-inputs.html">Basic Inputs </a></li>
-                  <li><a href="form-input-groups.html">Input Groups </a></li>
-                  <li><a href="form-horizontal.html">Horizontal Form </a></li>
-                  <li><a href="form-vertical.html"> Vertical Form </a></li>
-                  <li><a href="form-mask.html">Form Mask </a></li>
-                  <li><a href="form-validation.html">Form Validation </a></li>
-                  <li><a href="form-select2.html">Form Select2 </a></li>
-                  <li><a href="form-fileupload.html">File Upload </a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><i data-feather="layout"></i> <span> Table </span>
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="tables-basic.html">Basic Tables </a></li>
-                  <li><a href="data-tables.html">Data Table </a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/product.svg" alt="img" /><span>
-                    Application</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="chat.html">Chat</a></li>
-                  <li><a href="calendar.html">Calendar</a></li>
-                  <li><a href="email.html">Email</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/time.svg" alt="img" /><span>
-                    Report</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li>
-                    <a href="purchaseorderreport.html">Purchase order report</a>
-                  </li>
-                  <li><a href="inventoryreport.html">Inventory Report</a></li>
-                  <li><a href="salesreport.html">Sales Report</a></li>
-                  <li><a href="invoicereport.html">Invoice Report</a></li>
-                  <li><a href="purchasereport.html">Purchase Report</a></li>
-                  <li><a href="supplierreport.html">Supplier Report</a></li>
-                  <li><a href="customerreport.html">Customer Report</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/users1.svg" alt="img" /><span>
-                    Users</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="newuser.html">New User </a></li>
-                  <li><a href="userlists.html">Users List</a></li>
-                </ul>
-              </li>
-              <li class="submenu">
-                <a href="javascript:void(0);"
-                  ><img src="assets/img/icons/settings.svg" alt="img" /><span>
-                    Settings</span
-                  >
-                  <span class="menu-arrow"></span
-                ></a>
-                <ul>
-                  <li><a href="generalsettings.html">General Settings</a></li>
-                  <li><a href="emailsettings.html">Email Settings</a></li>
-                  <li><a href="paymentsettings.html">Payment Settings</a></li>
-                  <li><a href="currencysettings.html">Currency Settings</a></li>
-                  <li><a href="grouppermissions.html">Group Permissions</a></li>
-                  <li><a href="taxrates.html">Tax Rates</a></li>
-                </ul>
-              </li>
-            </ul>
+    <div class="page-wrapper">
+      <form class="content" action="#" method="post" enctype="multipart/form-data">
+        <div class="page-header">
+          <div class="page-title">
+            <h4>Thêm danh mục sản phẩm</h4>
+            <h6>Thêm thông tin danh mục sản phẩm của bạn vào hệ thống</h6>
+          </div>
+          <div class="page-btn">
+            <button type="submit" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img" class="me-1">Lưu danh mục</button>
           </div>
         </div>
-      </div>
 
-      <div class="page-wrapper">
-        <div class="content">
-          <div class="page-header">
-            <div class="page-title">
-              <h4>Product Add Category</h4>
-              <h6>Create new product Category</h6>
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-6 col-12">
+                    <div class="form-group">
+                      <label>Tên danh mục <span data-bs-toggle="tooltip" data-bs-placement="top" class="text-danger"
+                          title="Bắt buộc">*</span></label>
+                      <input class="text-black" type="text" name="tensp" value="" placeholder="Nhập tên danh mục sản phẩm..."
+                        id="slug-source" onkeyup="ChangeToSlug();" />
+                      <label>Đường dẫn: <span class="fst-italic form-text text-muted" id="slug-text">...</span></label>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label>Mô tả danh mục <span data-bs-toggle="tooltip" data-bs-placement="top" class="text-danger"
+                          title="Bắt buộc">*</span></label>
+                      <textarea class="form-control" name="mota" id="mo_ta" value="" style="height: 200px;"></textarea>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
             </div>
           </div>
+          <div class="col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-lg-12 col-sm-6 col-12">
+                    <div class="form-group">
+                      <label>Chọn danh mục cha (nếu có)<span data-bs-toggle="tooltip" data-bs-placement="top" class="text-danger"
+                          title="Bắt buộc">*</span></label>
+                      <select class="select">
+                        <option selected>Không có</option>
+                        <option>Brand</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-sm-6 col-12">
+                    <div class="form-group">
+                      <label>Trạng thái danh mục <span data-bs-toggle="tooltip" data-bs-placement="top"
+                          class="text-danger" title="Bắt buộc">*</span></label>
+                      <select class="select text-black">
+                        <option>Công khai</option>
+                        <option>Tặm khóa</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-lg-12">
+                    <div class="form-group">
+                      <label> Hình ảnh danh mục <span data-bs-toggle="tooltip" data-bs-placement="top"
+                          class="text-danger" title="Bắt buộc">*</span></label>
 
-          <div class="card">
-            <div class="card-body">
-              <div class="row">
-                <div class="col-lg-6 col-sm-6 col-12">
-                  <div class="form-group">
-                    <label>Category Name</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-6 col-sm-6 col-12">
-                  <div class="form-group">
-                    <label>Category Code</label>
-                    <input type="text" />
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label>Description</label>
-                    <textarea class="form-control"></textarea>
-                  </div>
-                </div>
-                <div class="col-lg-12">
-                  <div class="form-group">
-                    <label> Product Image</label>
-                    <div class="image-upload">
-                      <input type="file" />
-                      <div class="image-uploads">
-                        <img src="assets/img/icons/upload.svg" alt="img" />
-                        <h4>Drag and drop a file to upload</h4>
+                      <div class="image-upload" id="drop-zone">
+                        <input type="file" id="imageInput" name="images[]" accept="image/*" />
+                        <div class="image-uploads">
+                          <img src="assets/img/icons/upload.svg" alt="img" />
+                          <h4>Kéo và thả file tại đây hoặc click để chọn</h4>
+                        </div>
                       </div>
+
+                      <div class="row mt-3" id="image-preview-container">
+                      </div>
+
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-12">
-                  <a href="javascript:void(0);" class="btn btn-submit me-2"
-                    >Submit</a
-                  >
-                  <a href="categorylist.html" class="btn btn-cancel">Cancel</a>
-                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+  </div>
 
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/feather.min.js"></script>
+  <script src="assets/js/jquery.slimscroll.min.js"></script>
 
-    <script src="assets/js/feather.min.js"></script>
+  <script src="assets/js/jquery.dataTables.min.js"></script>
+  <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+  <script src="assets/js/moment.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
 
-    <script src="assets/js/jquery.slimscroll.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/pdfmake.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.7/vfs_fonts.js"></script>
 
-    <script src="assets/js/jquery.dataTables.min.js"></script>
-    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+  <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
 
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/plugins/select2/js/select2.min.js"></script>
+  <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
+  <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+  <script src="assets/plugins/alertify/alertify.min.js"></script>
+  <script src="assets/plugins/alertify/custom-alertify.min.js"></script>
 
-    <script src="assets/plugins/select2/js/select2.min.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/46.0.2/ckeditor5.umd.js" crossorigin></script>
+  <script src="https://cdn.ckeditor.com/ckeditor5/46.0.2/translations/vi.umd.js" crossorigin></script>
 
-    <script src="assets/plugins/sweetalert/sweetalert2.all.min.js"></script>
-    <script src="assets/plugins/sweetalert/sweetalerts.min.js"></script>
+  <script src="assets/plugins/apexchart/apexcharts.min.js"></script>
+  <script src="assets/plugins/apexchart/chart-data.js"></script>
 
-    <script src="assets/js/script.js"></script>
-  </body>
+  <style>
+    /* Container chứa các ảnh preview */
+#image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Khối bao quanh mỗi ảnh */
+.preview-image-item {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    cursor: grab; /* Con trỏ hình bàn tay */
+    background: #fff;
+    transition: transform 0.2s;
+}
+
+/* Hiệu ứng khi đang được kéo */
+.preview-image-item.dragging {
+    opacity: 0.5;
+    border: 2px dashed #ff9f43;
+}
+
+/* Hình ảnh bên trong */
+.preview-image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none; /* Tránh xung đột sự kiện kéo chuột */
+}
+
+/* Nút xóa ảnh */
+.btn-remove-image {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: rgba(255, 0, 0, 0.7);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 12px;
+    z-index: 10;
+}
+.btn-remove-image:hover {
+    background: red;
+}
+  </style>
+
+  <script>
+      /**
+        * This configuration was generated using the CKEditor 5 Builder. You can modify it anytime using this link:
+        * https://ckeditor.com/ckeditor-5/builder/?redirect=portal#installation/NoNgNARATAdA7DAzBSU5RAFgIwAZeYCcucAHNnAKzoXG6mlyGam6FSVQOUgoQBuASxS4wwbGFGiJ0gLqQApgEMARriVLCEWUA===
+        */
+
+        const {
+          ClassicEditor,
+          Alignment,
+          AutoImage,
+          AutoLink,
+          Autosave,
+          BlockQuote,
+          Bold,
+          Bookmark,
+          Code,
+          CodeBlock,
+          Essentials,
+          FindAndReplace,
+          FontBackgroundColor,
+          FontColor,
+          FontFamily,
+          FontSize,
+          GeneralHtmlSupport,
+          Heading,
+          Highlight,
+          HorizontalLine,
+          ImageBlock,
+          ImageCaption,
+          ImageInsert,
+          ImageInsertViaUrl,
+          ImageToolbar,
+          ImageUpload,
+          Indent,
+          IndentBlock,
+          Italic,
+          Link,
+          LinkImage,
+          MediaEmbed,
+          Paragraph,
+          PasteFromOffice,
+          RemoveFormat,
+          SimpleUploadAdapter,
+          SpecialCharacters,
+          SpecialCharactersArrows,
+          SpecialCharactersCurrency,
+          SpecialCharactersEssentials,
+          SpecialCharactersLatin,
+          SpecialCharactersMathematical,
+          SpecialCharactersText,
+          Strikethrough,
+          Style,
+          Subscript,
+          Superscript,
+          Table,
+          TableCaption,
+          TableCellProperties,
+          TableColumnResize,
+          TableProperties,
+          TableToolbar,
+          TextPartLanguage,
+          Underline,
+          WordCount
+        } = window.CKEDITOR;
+
+        const LICENSE_KEY =
+          'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3ODczNTY3OTksImp0aSI6IjM3OTJmZDBhLTgxOTQtNDRlZi05MDFmLTRhMjAwOWQ2NDAyMiIsImxpY2Vuc2VkSG9zdHMiOlsiMTI3LjAuMC4xIiwibG9jYWxob3N0IiwiMTkyLjE2OC4qLioiLCIxMC4qLiouKiIsIjE3Mi4qLiouKiIsIioudGVzdCIsIioubG9jYWxob3N0IiwiKi5sb2NhbCJdLCJ1c2FnZUVuZHBvaW50IjoiaHR0cHM6Ly9wcm94eS1ldmVudC5ja2VkaXRvci5jb20iLCJkaXN0cmlidXRpb25DaGFubmVsIjpbImNsb3VkIiwiZHJ1cGFsIl0sImxpY2Vuc2VUeXBlIjoiZGV2ZWxvcG1lbnQiLCJmZWF0dXJlcyI6WyJEUlVQIiwiRTJQIiwiRTJXIl0sInZjIjoiNDExMjYxNTkifQ.9YG3z9toN0pcTRdXGXTj42xVsK5KTxt-ZUqJpw-6QeaoPtDbkgbY3CjMdxWNi7Dorln7D8yWImhoSrcWHIqZEg';
+
+        const editorConfig = {
+          toolbar: {
+            items: [
+              'undo',
+              'redo',
+              '|',
+              'findAndReplace',
+              'textPartLanguage',
+              '|',
+              'heading',
+              'style',
+              '|',
+              'fontSize',
+              'fontFamily',
+              'fontColor',
+              'fontBackgroundColor',
+              '|',
+              'bold',
+              'italic',
+              'underline',
+              'strikethrough',
+              'subscript',
+              'superscript',
+              'code',
+              'removeFormat',
+              '|',
+              'specialCharacters',
+              'horizontalLine',
+              'link',
+              'bookmark',
+              'insertImage',
+              'MediaEmbed',
+              'insertTable',
+              'highlight',
+              'blockQuote',
+              'codeBlock',
+              '|',
+              'alignment',
+              '|',
+              'outdent',
+              'indent'
+            ],
+            shouldNotGroupWhenFull: false
+          },
+          plugins: [
+            Alignment,
+            AutoImage,
+            AutoLink,
+            Autosave,
+            BlockQuote,
+            Bold,
+            Bookmark,
+            Code,
+            CodeBlock,
+            Essentials,
+            FindAndReplace,
+            FontBackgroundColor,
+            FontColor,
+            FontFamily,
+            FontSize,
+            GeneralHtmlSupport,
+            Heading,
+            Highlight,
+            HorizontalLine,
+            ImageBlock,
+            ImageCaption,
+            ImageInsert,
+            ImageInsertViaUrl,
+            ImageToolbar,
+            ImageUpload,
+            MediaEmbed,
+            Indent,
+            IndentBlock,
+            Italic,
+            Link,
+            LinkImage,
+            Paragraph,
+            PasteFromOffice,
+            RemoveFormat,
+            SimpleUploadAdapter,
+            SpecialCharacters,
+            SpecialCharactersArrows,
+            SpecialCharactersCurrency,
+            SpecialCharactersEssentials,
+            SpecialCharactersLatin,
+            SpecialCharactersMathematical,
+            SpecialCharactersText,
+            Strikethrough,
+            Style,
+            Subscript,
+            Superscript,
+            Table,
+            TableCaption,
+            TableCellProperties,
+            TableColumnResize,
+            TableProperties,
+            TableToolbar,
+            TextPartLanguage,
+            Underline,
+            WordCount
+          ],
+          mediaEmbed: {
+            previewsInData: true
+        },
+          fontFamily: {
+            supportAllValues: true
+          },
+          fontSize: {
+            options: [10, 12, 14, 'default', 18, 20, 22],
+            supportAllValues: true
+          },
+          heading: {
+            options: [
+              {
+                model: 'paragraph',
+                title: 'Paragraph',
+                class: 'ck-heading_paragraph'
+              },
+              {
+                model: 'heading1',
+                view: 'h1',
+                title: 'Heading 1',
+                class: 'ck-heading_heading1'
+              },
+              {
+                model: 'heading2',
+                view: 'h2',
+                title: 'Heading 2',
+                class: 'ck-heading_heading2'
+              },
+              {
+                model: 'heading3',
+                view: 'h3',
+                title: 'Heading 3',
+                class: 'ck-heading_heading3'
+              },
+              {
+                model: 'heading4',
+                view: 'h4',
+                title: 'Heading 4',
+                class: 'ck-heading_heading4'
+              },
+              {
+                model: 'heading5',
+                view: 'h5',
+                title: 'Heading 5',
+                class: 'ck-heading_heading5'
+              },
+              {
+                model: 'heading6',
+                view: 'h6',
+                title: 'Heading 6',
+                class: 'ck-heading_heading6'
+              }
+            ]
+          },
+          htmlSupport: {
+            allow: [
+              {
+                name: /^.*$/,
+                styles: true,
+                attributes: true,
+                classes: true
+              }
+            ]
+          },
+          image: {
+            toolbar: ['toggleImageCaption']
+          },
+          language: 'vi',
+          licenseKey: LICENSE_KEY,
+          link: {
+            addTargetToExternalLinks: true,
+            defaultProtocol: 'https://',
+            decorators: {
+              toggleDownloadable: {
+                mode: 'manual',
+                label: 'Downloadable',
+                attributes: {
+                  download: 'file'
+                }
+              }
+            }
+          },
+          placeholder: 'Type or paste your content here!',
+          style: {
+            definitions: [
+              {
+                name: 'Article category',
+                element: 'h3',
+                classes: ['category']
+              },
+              {
+                name: 'Title',
+                element: 'h2',
+                classes: ['document-title']
+              },
+              {
+                name: 'Subtitle',
+                element: 'h3',
+                classes: ['document-subtitle']
+              },
+              {
+                name: 'Info box',
+                element: 'p',
+                classes: ['info-box']
+              },
+              {
+                name: 'CTA Link Primary',
+                element: 'a',
+                classes: ['button', 'button--green']
+              },
+              {
+                name: 'CTA Link Secondary',
+                element: 'a',
+                classes: ['button', 'button--black']
+              },
+              {
+                name: 'Marker',
+                element: 'span',
+                classes: ['marker']
+              },
+              {
+                name: 'Spoiler',
+                element: 'span',
+                classes: ['spoiler']
+              }
+            ]
+          },
+          table: {
+            contentToolbar: ['tableColumn', 'tableRow', 'mergeTableCells', 'tableProperties', 'tableCellProperties']
+          }
+        };
+
+        ClassicEditor.create(document.querySelector('#editor'), editorConfig).then(editor => {
+          const wordCount = editor.plugins.get('WordCount');
+          document.querySelector('#editor-word-count').appendChild(wordCount.wordCountContainer);
+
+          return editor;
+        });
+
+    </script>
+  <script>
+    /**
+   * This configuration was generated using the CKEditor 5 Builder. You can modify it anytime using this link:
+   * https://ckeditor.com/ckeditor-5/builder/?redirect=portal#installation/NoNgNARATAdA7DKFIhATgIwBY0gKwZxwAccaZW6xIWeeUAzFgAzEFZT4jIQBuAlsmZhgGMMOFjJAXUhYAZgEM089BGlA
+   */
+
+    ClassicEditor.create(document.querySelector('#mo_ta'), editorConfig);
+
+  </script>
+  <script>
+    function ChangeToSlug() {
+      let title, slug;
+
+      // 1. Lấy text từ ô nhập liệu
+      title = document.getElementById("slug-source").value;
+
+      // 2. Xử lý chuỗi (Chuyển tiếng Việt -> Không dấu -> Gạch ngang)
+      slug = title.toLowerCase();
+      slug = slug.replace(/á|à|ả|ạ|ã|ă|ắ|ằ|ẳ|ẵ|ặ|â|ấ|ầ|ẩ|ẫ|ậ/gi, 'a');
+      slug = slug.replace(/é|è|ẻ|ẽ|ẹ|ê|ế|ề|ể|ễ|ệ/gi, 'e');
+      slug = slug.replace(/i|í|ì|ỉ|ĩ|ị/gi, 'i');
+      slug = slug.replace(/ó|ò|ỏ|õ|ọ|ô|ố|ồ|ổ|ỗ|ộ|ơ|ớ|ờ|ở|ỡ|ợ/gi, 'o');
+      slug = slug.replace(/ú|ù|ủ|ũ|ụ|ư|ứ|ừ|ử|ữ|ự/gi, 'u');
+      slug = slug.replace(/ý|ỳ|ỷ|ỹ|ỵ/gi, 'y');
+      slug = slug.replace(/đ/gi, 'd');
+      slug = slug.replace(/\`|\~|\!|\@|\#|\||\$|\%|\^|\&|\*|\(|\)|\+|\=|\,|\.|\/|\?|\>|\<|\'|\"|\:|\;|_/gi, '');
+      slug = slug.replace(/ /gi, "-");
+      slug = slug.replace(/\-\-\-\-\-/gi, '-');
+      slug = slug.replace(/\-\-\-\-/gi, '-');
+      slug = slug.replace(/\-\-\-/gi, '-');
+      slug = slug.replace(/\-\-/gi, '-');
+      slug = '@' + slug + '@';
+      slug = slug.replace(/\@\-|\-\@|\@/gi, '');
+
+      // 3. Nếu input rỗng thì hiển thị text mặc định, ngược lại thì hiển thị slug
+      if (slug === "") {
+        document.getElementById('slug-text').innerText = "...";
+      } else {
+        document.getElementById('slug-text').innerText = slug;
+      }
+    }
+  </script>
+  <script>
+    $(document).ready(function() {
+        // Mảng lưu trữ các file hiện tại (Dùng DataTransfer để đồng bộ với input)
+        let dt = new DataTransfer(); 
+        const imageInput = document.getElementById('imageInput');
+        const previewContainer = document.getElementById('image-preview-container');
+
+        // 1. XỬ LÝ KHI CHỌN FILE
+        $('#imageInput').on('change', function(e) {
+            for (let i = 0; i < this.files.length; i++) {
+                let file = this.files[i];
+                // Chỉ chấp nhận file ảnh và không trùng lặp (nếu muốn)
+                dt.items.add(file);
+            }
+            // Cập nhật lại input và render view
+            updateInputFiles();
+            renderPreview();
+        });
+
+        // 2. HÀM RENDER ẢNH PREVIEW
+        function renderPreview() {
+            previewContainer.innerHTML = ''; // Xóa preview cũ
+            
+            Array.from(dt.files).forEach((file, index) => {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    const html = `
+                        <div class="preview-image-item" draggable="true" data-index="${index}">
+                            <img src="${e.target.result}" alt="Image">
+                            <button type="button" class="btn-remove-image" onclick="removeImage(${index})">&times;</button>
+                        </div>
+                    `;
+                    $(previewContainer).append(html);
+                }
+                reader.readAsDataURL(file);
+            });
+
+            // Gán lại sự kiện Drag & Drop cho các item mới sinh ra
+            addDragDropEvents();
+        }
+
+        // 3. HÀM CẬP NHẬT LẠI INPUT FILE (QUAN TRỌNG CHO LARAVEL)
+        window.updateInputFiles = function() {
+            imageInput.files = dt.files;
+        }
+
+        // 4. HÀM XÓA ẢNH
+        window.removeImage = function(index) {
+            const newDt = new DataTransfer();
+            Array.from(dt.files).forEach((file, i) => {
+                if (i !== index) newDt.items.add(file);
+            });
+            dt = newDt; // Cập nhật lại biến global
+            updateInputFiles(); // Đồng bộ input
+            renderPreview(); // Vẽ lại giao diện
+        }
+
+        // 5. XỬ LÝ KÉO THẢ SẮP XẾP (DRAG & DROP)
+        function addDragDropEvents() {
+            const items = document.querySelectorAll('.preview-image-item');
+            let dragStartIndex;
+
+            items.forEach(item => {
+                item.addEventListener('dragstart', function() {
+                    dragStartIndex = +this.getAttribute('data-index');
+                    this.classList.add('dragging');
+                });
+
+                item.addEventListener('dragend', function() {
+                    this.classList.remove('dragging');
+                });
+
+                item.addEventListener('dragover', function(e) {
+                    e.preventDefault(); // Cho phép drop
+                });
+
+                item.addEventListener('drop', function() {
+                    const dragEndIndex = +this.getAttribute('data-index');
+                    swapItems(dragStartIndex, dragEndIndex);
+                });
+            });
+        }
+
+        // 6. LOGIC HOÁN ĐỔI VỊ TRÍ TRONG MẢNG FILE
+        function swapItems(fromIndex, toIndex) {
+            if (fromIndex === toIndex) return;
+
+            const fileArray = Array.from(dt.files);
+            
+            // Hoán đổi vị trí trong mảng tạm
+            const itemToMove = fileArray.splice(fromIndex, 1)[0];
+            fileArray.splice(toIndex, 0, itemToMove);
+
+            // Tạo DataTransfer mới từ mảng đã sắp xếp
+            const newDt = new DataTransfer();
+            fileArray.forEach(file => newDt.items.add(file));
+            
+            dt = newDt; // Cập nhật biến gốc
+            updateInputFiles(); // Cập nhật input thật
+            renderPreview(); // Vẽ lại
+        }
+    });
+</script>
+</body>
+
 </html>

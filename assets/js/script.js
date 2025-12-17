@@ -53,6 +53,24 @@ $(document).ready(function () {
       responsive: { 0: { items: 2 }, 768: { items: 4 }, 1170: { items: 8 } },
     });
   }
+  if ($(".dataold").length > 0) {
+    $(".dataold").DataTable({
+      bFilter: true,
+      sDom: "ftlpi",
+      pagingType: "numbers",
+      ordering: false,
+      language: {
+        search: " ",
+        sLengthMenu: "_MENU_",
+        searchPlaceholder: "Tìm kiếm...",
+        info: "_START_ - _END_ of _TOTAL_ items",
+      },
+      initComplete: (settings, json) => {
+        $(".dataTables_filter").appendTo("#tableSearch");
+        $(".dataTables_filter").appendTo(".search-input");
+      },
+    });
+  }
   $(document).ready(function() {
     if ($(".datanew").length > 0) {
         

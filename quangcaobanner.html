@@ -184,7 +184,7 @@
                 </li>
                 <li><a href="categorylist.html">Danh mục sản
                     phẩm</a></li>
-                <li><a class="active" href="brandlist.html">Thương hiệu
+                <li><a href="brandlist.html">Thương hiệu
                     sản phẩm</a></li>
               </ul>
             </li>
@@ -194,9 +194,8 @@
                 <span class="menu-arrow"></span></a>
               <ul>
                 <!-- <li><a href="saleslist.html">Xác nhận thanh toán<span class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li> -->
-                <li><a href="saleslist.html">Xác nhận đơn hàng <span
+                <li><a href="saleslist.html">Danh sách đơn hàng <span
                       class="bg-warning text-white px-2 py-1 rounded-circle">4</span></a></li>
-                <li><a href="#">Danh sách đơn hàng</a></li>
 
               </ul>
             </li>
@@ -240,7 +239,7 @@
                 <span class="menu-arrow"></span></a>
               <ul>
                 <li><a href="transferlist.html">Trang nội dung</a></li>
-                <li><a href="addtransfer.html">Banner quảng cáo</a></li>
+                <li><a class="active" href="quangcaobanner.html">Banner quảng cáo</a></li>
               </ul>
             </li>
             <li>
@@ -257,12 +256,12 @@
       <div class="content">
         <div class="page-header">
           <div class="page-title">
-            <h4>Danh sách thương hiệu sản phẩm</h4>
-            <h6>Quản lý thương hiệu sản phẩm của bạn</h6>
+            <h4>Danh sách banner quảng cáo</h4>
+            <h6>Quản lý banner quảng cáo của bạn</h6>
           </div>
           <div class="page-btn">
-            <a href="addbrand.html" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img"
-                class="me-1" />Thêm thương hiệu</a>
+            <a href="addbanner.html" class="btn btn-added"><img src="assets/img/icons/plus.svg" alt="img"
+                class="me-1" />Thêm banner quảng cáo</a>
           </div>
         </div>
 
@@ -285,9 +284,9 @@
                 <!-- có thể thêm dataold sau class table -->
                 <thead>
                   <tr>
-                    <th class="text-start">Tên thương hiệu</th>
+                    <th class="text-start">Banner quảng cáo</th>
                     <th class="text-start">Mô tả</th>
-                    <th class="text-start">Slug</th>
+                    <th class="text-start">Liên kết</th>
                     <th class="text-center">Trạng thái</th>
                     <th>Action</th>
                   </tr>
@@ -295,25 +294,41 @@
                 <tbody>
                   <tr>
                     <td class="productimgname align-items-center w-100">
-                      <a href="javascript:void(0);" class="product-img">
-                        <img src="assets/img/product/ca-phe-bao-tu-linh-chi-pha-vach-giup-tinh-tao-1.webp" alt="product" style="object-fit: cover; width:60px; height: 100%;" />
+                      <a href="https://sieuthivina.com/qua-tang" class="product-img">
+                        <img src="https://sieuthivina.com/assets/client/images/bg/banner4cai_chatviet.png" alt="product" style="object-fit: cover; width:220px; height: 100%;" />
                       </a>
-                      <div>
-                        <!-- <span style="font-size: 12px;">CHẤT VIỆT GROUP</span> -->
-                        <p style="width: 150px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
-                          <a href="javascript:void(0);" data-bs-toggle="tooltip" data-bs-placement="top" title="Tên thương hiệu">ten-thuong-hieu</a>
-                        </p>
-                      </div>
                       
                     </td>
                     <td class="text-start">
-                        <div style="font-size: 14px; width: 340px; white-space: break-spaces; overflow: hidden; text-overflow: ellipsis;">Đây là mô tả thương hiệu bao gồm giới thiệu công ty, chuyên mục bán hàng và uy tính từ thương hiệu, cần phải hiển thị ngắn gọn nhưng phải chắc chắn</div>
+                        <div style="font-size: 14px; width: 340px; white-space: break-spaces; overflow: hidden; text-overflow: ellipsis;">Đây là mô tả banner quảng cáo bao gồm giới thiệu công ty, chuyên mục bán hàng và uy tính từ thương hiệu, cần phải hiển thị ngắn gọn nhưng phải chắc chắn</div>
                     </td>
-                    <td class="text-start">ten-thuong-hieu</td>
+                    <td class="text-start"><a href="https://sieuthivina.com/qua-tang">https://sieuthivina.com/qua-tang</a></td>
                     <td class="text-center"><span class="badges bg-lightgreen">Công khai</span></td>
                     <!-- <td class="text-center"><span class="badges bg-lightred">Tạm ẩn</span></td> -->
                     <td>
-                      <a class="me-3" href="editcategory.html">
+                      <a class="me-3" href="editbanner.html">
+                        <img src="assets/img/icons/edit.svg" alt="img" />
+                      </a>
+                      <a class="confirm-text" href="javascript:void(0);">
+                        <img src="assets/img/icons/delete.svg" alt="img" />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="productimgname align-items-center w-100">
+                      <a href="https://sieuthivina.com/qua-tang" class="product-img">
+                        <img src="https://sieuthivina.com/assets/client/images/bg/qua-tang-05.jpg" alt="product" style="object-fit: cover; width:220px; height: 100%;" />
+                      </a>
+                      
+                    </td>
+                    <td class="text-start">
+                        <div style="font-size: 14px; width: 340px; white-space: break-spaces; overflow: hidden; text-overflow: ellipsis;">Đây là mô tả banner quảng cáo bao gồm giới thiệu công ty, chuyên mục bán hàng và uy tính từ thương hiệu, cần phải hiển thị ngắn gọn nhưng phải chắc chắn</div>
+                    </td>
+                    <td class="text-start"><a href="https://sieuthivina.com/qua-tang">https://sieuthivina.com/qua-tang</a></td>
+                    <td class="text-center"><span class="badges bg-lightgreen">Công khai</span></td>
+                    <!-- <td class="text-center"><span class="badges bg-lightred">Tạm ẩn</span></td> -->
+                    <td>
+                      <a class="me-3" href="editbanner.html">
                         <img src="assets/img/icons/edit.svg" alt="img" />
                       </a>
                       <a class="confirm-text" href="javascript:void(0);">
